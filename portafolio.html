@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portafolio.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+  
+</head>
+<body>
+
+<!-- Barra de navegación -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img src="img/logo.png" width="30" height="24">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#Inicio">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Portafolio">Portafolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Sobre mí">Sobre mí</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#Contacto">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+ <!-- INICIO -->
+ <section id="inicio" class="hero">
+
+  <video autoplay muted loop class="video-hero">
+    <source src="img/video.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>RITA LAURA PEREDA</h1>
+    <p>
+      Proyectos de productos que fusionan creatividad y funcionalidad el diseño industrial y el arte
+    </p>
+    <div class="flecha" onclick="bajarPortafolio()">↓</div>
+  </div>
+
+</section>
+
+
+  <!-- PORTAFOLIO -->
+  <section id="Portafolio" class="section portafolio">
+    <h1>Portafolio</h1>
+
+    <div class="grid" id="galeria">
+      <a href="#" class="proyecto" onclick="mostrarProyecto(0)">
+        <img src="img/10.png" alt="">
+        <div class="overlay">Calladium</div>
+      </a>
+
+    <div class="proyecto" onclick="mostrarProyecto(1)">
+        <img src="img/14.jpg">
+    <div class="overlay">Disell</div>
+    </div>
+
+
+      <div class="proyecto" onclick="mostrarProyecto(2)">
+        <img src="img/19.jpg">
+        <div class="overlay">Dior</div>
+      </div>
+    </div>
+
+    <div class="grid">
+    <div class="proyecto" onclick="mostrarProyecto(3)">
+        <img src="img/23.jpg">
+        <div class="overlay">Biomad</div>
+      </div>
+
+    <div class="proyecto" onclick="mostrarProyecto(4)">
+        <img src="img/1.8.jpg">
+        <div class="overlay">Ánima</div>
+    </div>
+
+    <div class="proyecto" onclick="mostrarProyecto(5)">
+        <img src="img/5.jpg">
+        <div class="overlay">Golden</div>
+      </div>
+    </div>
+
+    <div class="grid">
+    <div class="proyecto" onclick="mostrarProyecto(6)">
+        <img src="img/27.jpg">
+        <div class="overlay">Monarca</div>
+      </div>
+
+      <div class="proyecto" onclick="mostrarProyecto(7)">
+        <img src="img/35.png">
+        <div class="overlay">Eyes Box</div>
+      </div>
+
+    <div class="proyecto" onclick="mostrarProyecto(8)">
+        <img src="img/31.png">
+        <div class="overlay">Panels</div>
+      </div>
+    </div>
+
+
+<!-- SOBRE MÍ -->
+ <section id="Sobre mí" class="section sobre-mi-preview">
+
+  <img 
+    src="img/40.png" 
+    id="imagenSobreMi"
+    onmouseover="resaltarImagen()"
+    onmouseout="normalImagen()"
+    onclick="mostrarSobreMi()"
+  >
+
+</section>
+
+<!-- SECCIÓN SOBRE MÍ COMPLETA -->
+<section id="sobreMi" class="section sobre-mi">
+  <h1>Sobre mí</h1>
+  <div class="texto-bloques">
+    <div class="bloque">
+      <p>
+        Rita Laura Pereda Hidalgo es una diseñadora en formación especializada en diseño de producto, actualmente cursando su cuarto año en UDIT (Madrid). Originaria de Cuba, estudió tres años de Diseño Industrial en el ISDi antes de trasladarse a España para continuar su formación académica y profesional.
+      </p>
+    </div>
+    <div class="bloque">
+      <p>
+        Su enfoque de diseño se centra en la sostenibilidad, la biomímesis y la innovación material, con especial interés en la creación de soluciones que reemplacen al plástico convencional por alternativas biodegradables y funcionales.
+      </p>
+    </div>
+  </div>
+  <img src="img/40.png" alt="Foto de Rita Laura Pereda Hidalgo" class="foto-mi">
+</section>
+
+
+
+  <!-- CONTACTO -->
+  <section id="Contacto" class="section contacto">
+    <h1>Contacto</h1>
+    <p>Email: <strong>mumi.ritihidaldo@gmail.com</strong></p>
+
+    <form action="mailto:mumi.ritihidaldo@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu email" required>
+      <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </section>
+
+  <script src="portafolio.js"></script>
+
+  <!-- Modal para detalles del proyecto -->
+  <div id="modal-proyecto" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="cerrarModal()">&times;</span>
+      <h2 id="modal-titulo"></h2>
+      <div class="imagen-container">
+        <button class="nav-btn prev" onclick="cambiarImagen(-1)">&lt;</button>
+        <img id="modal-imagen-principal" src="" alt="">
+        <button class="nav-btn next" onclick="cambiarImagen(1)">&gt;</button>
+      </div>
+      <p id="modal-descripcion"></p>
+      <div class="modal-galeria" id="modal-galeria">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
